@@ -1,0 +1,77 @@
+
+    .sidebar {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 50px;
+      left: 0;
+      background-color: #00a8ff;
+      overflow-x: hidden;
+      padding-top: 60px;
+      transition: 0.5s;
+    }
+
+    .sidebar a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 15px;
+      color: #fff;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .sidebar a:hover {
+      color: #f1f1f1;
+    }
+
+    .sidebar .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+
+    .sidebar-open #main{
+      margin-left: 232px;
+    }
+
+    .sidebar-open #mySidebar{
+      width: 232px;
+    }
+
+    .togglebtn {
+      font-size: 20px;
+      cursor: pointer;
+      background-color: #111;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+    }
+    .togglebtn,
+    .togglebtn:hover,
+    .togglebtn:focus {
+      outline: 0;
+    }
+
+    .top_bar{
+      height: 50px;
+    }
+
+    .togglebtn:hover {
+      background-color: #444;
+    }
+    #main {
+      transition: margin-left .5s;
+      padding: 20px;
+    }
+    @media screen and (max-height: 450px) {
+      .sidebar {
+        padding-top: 15px;
+      }
+
+      .sidebar a {
+        font-size: 18px;
+      }
+    }
